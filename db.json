@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "ed21",
+      "username": "natasha",
+      "email": "natasha@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "d0d5",
+      "username": "seek",
+      "email": "seek@gmail.com",
+      "password": "qwert"
+    },
+    {
+      "id": "b41e",
+      "username": "isaac",
+      "email": "isaac@gmail.com",
+      "password": "isaac24"
+    }
+  ]
+}

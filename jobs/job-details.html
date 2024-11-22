@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ZINDUA ALUMNI - Search Jobs</title>
+        <link rel="stylesheet" href="../style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    </head>
+
+    <body>
+         <!-- Header  Section-->
+         <header>
+            <div id="navbar" class="obj-width">
+                <a href="index.html">
+                    <img class="logo" src="../images/ZINDUA-removebg-preview.png" alt="">
+                </a>
+
+                <ul id="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../jobs/job.html">Jobs</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                    <button id="w-btn">Login</button>
+                </ul> 
+                
+                <i id="bar" class='bx bx-menu'></i>
+            </div>
+         </header>
+
+
+
+
+         <div id="jobDetails" class="jobDetails sec-space extra-space obj-width">
+            <!--<div class="job-header">
+                <div class="job-img-row">
+                    <img src="../images/google.png" alt="">
+                    <div>
+                        <h2>Google</h2>
+                        <span>Nairobi</span>
+                    </div>
+                </div>
+                <a id="g-btn" href="#">Apply</a>
+            </div>
+            <div class="features sec-space obj-width">
+       
+                <div class="fe-container ">
+                    <div class="fe-box">
+                        <img src="../images/vacancy.png" alt="">
+                        <h3>Vacancy</h3>
+                        <p>01 Vacancy</p>
+                    </div>
+                    <div class="fe-box">
+                        <img src="../images/fe 1.png" alt="">
+                        <h3>Position</h3>
+                        <p>Web Developer</p>
+                    </div>
+                    <div class="fe-box">
+                        <img src="../images/hour.png " alt="">
+                        <h3>Hours</h3>
+                        <p>40h / week</p>
+                    </div>
+                    <div class="fe-box">
+                        <img src="../images/salary.png" alt="">
+                        <h3>Salary</h3>
+                        <p>$900 - 1200/m</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="job-description sec-space">
+                <h3>Job Description</h3>
+                <p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>
+                
+                <h3>Employment Status</h3>
+                <p>Full Time</p>
+
+                <h3>Workplace</h3>
+                <p>Hybrid</p>
+
+                <h3>Educational Requirements</h3>
+                <p>Bachelor's degree in Computer Science or related technical field.</p>
+
+                <h3>Experience Requirements</h3>
+                <p>2 years</p>
+             </div>-->
+         </div>
+     
+
+       
+            
+
+        
+
+
+       
+
+
+
+
+
+        <!-- Footer  Section-->
+         <footer class="footer">
+            <div class="obj-width">
+                <div class="top">
+                    <div>
+                       <img class="logo" src="../images/Zindua__2_-removebg-preview.png" alt="">
+                    
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/zinduaschool/">
+                            <i class='bx bxl-youtube' ></i>
+                        </a>
+                        <a href="https://www.facebook.com/zinduaschool/">
+                            <i class='bx bxl-facebook-square'></i>
+                        </a>
+                        <a href="https://www.instagram.com/zinduaschool/">
+                            <i class='bx bxl-instagram-alt' ></i>
+                        </a>
+                        <a href="https://www.linkedin.com/school/zinduaschool/?originalSubdomain=ke">
+                            <i class='bx bxl-linkedin-square' ></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div>
+                        <h3>Project</h3>
+                        <a href="#">Changelog</a>
+                        <a href="#">Status</a>
+                        <a href="#">License</a>
+                        <a href="#">All Versions</a>
+                    </div>
+                    <div>
+                        <h3>Community</h3>
+                        <a href="#">Github</a>
+                        <a href="#">Issues</a>
+                        <a href="#">Project</a>
+                        <a href="#">Slack</a>
+                    </div>
+                    <div>
+                        <h3>Help</h3>
+                        <a href="#">Support</a>
+                        <a href="#">Troubleshooting</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div>
+                        <h3>Others</h3>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">License</a> 
+                    </div>
+                      
+                        
+                        
+
+                       
+                </div>
+            </div>
+
+         </footer>
+
+         <script>
+            document.addEventListener ("DOMContentLoaded", () => {
+                const urlParam = new URLSearchParams(window.location.search);
+                const index = urlParam.get("id");
+                const selectJob = jCategory[index];
+
+                const jobDetailsContainer = document.getElementById("jobDetails");
+                jobDetailsContainer.innerHTML = `
+                <div class="job-header">
+                <div class="job-img-row">
+                    <img src=${selectJob.image} alt="">
+                    <div>
+                        <h2>${selectJob.companyName}</h2>
+                        <span>${selectJob.location}</span>
+                    </div>
+                </div>
+                <a id="g-btn" href="#">Apply</a>
+            </div>
+            <div class="features obj-width">
+       
+                <div class="fe-container ">
+                    <div class="fe-box">
+                        <img src="../images/vacancy.png" alt="">
+                        <h3>Vacancy</h3>
+                        <p>${selectJob.vacancy}</p>
+                    </div>
+                    <div class="fe-box">
+                        <img src="../images/fe 1.png" alt="">
+                        <h3>Position</h3>
+                        <p>${selectJob.title}</p>
+                    </div>
+                    <div class="fe-box">
+                        <img src="../images/hour.png " alt="">
+                        <h3>Hours</h3>
+                        <p>${selectJob.hours}</p>
+                    </div>
+                    <div class="fe-box">
+                        <img src="../images/salary.png" alt="">
+                        <h3>Salary</h3>
+                        <p>${selectJob.rate}</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="job-description sec-space">
+                <h3>Job Description</h3>
+                <p>${selectJob.description}</p>
+                
+                <h3>Employment Status</h3>
+                <p>${selectJob.av}</</p>
+
+                <h3>Workplace</h3>
+                <p>${selectJob.workplace}</p>
+
+                <h3>Educational Requirements</h3>
+                <p>${selectJob.education}</p>
+
+                <h3>Experience Requirements</h3>
+                <p>${selectJob.experience}</p>
+             </div>`;
+            });
+         </script>
+
+
+        <script src="../toggle.js"></script>
+        <script src="job-list.js"></script>
+        <script src="jobSearch.js"></script>
+    </body> 
+
+</html>
