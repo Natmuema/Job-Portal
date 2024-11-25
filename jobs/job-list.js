@@ -17,7 +17,7 @@ const jCategory = [
     {
         index:1,
         image:"../images/uber.png",
-        title: "Freelancer",
+        title: "Backend Developer",
         rate: '$800-1000/m',
         av: "Freelancer",
         companyName: "Uber",
@@ -92,7 +92,7 @@ const jCategory = [
     {
         index:6,
         image:"../images/wordpress.png",
-        title: "Freelancer",
+        title: "Full Stack Developer",
         rate: '$1000/m',
         av: "Freelancer",
         companyName: "Wordpress",
